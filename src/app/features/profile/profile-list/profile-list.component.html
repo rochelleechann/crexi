@@ -1,0 +1,19 @@
+<crx-page>
+    <div class="header">
+        <crx-header pageTitle="Profile List"></crx-header>
+    </div>
+
+    <div class="primary-container" *ngFor="let user of users$ | async; let i = index">
+        <mat-card class="card" (click)="trackUserSelection(i)">
+            <mat-card-title-group>
+                <mat-card-title>{{ user.firstName }} {{ user.lastName }}</mat-card-title>
+                <mat-card-subtitle><span class="subtitle">Birthday: </span>{{ user.dateOfBirth }}</mat-card-subtitle>
+                <mat-card-subtitle><span class="subtitle">Phone Number <i class="fa fa-phone" aria-hidden="true"></i> : </span>{{user.phoneNumber}}</mat-card-subtitle>
+                <mat-card-subtitle><span class="subtitle">Cell Number <i class="fa fa-mobile" aria-hidden="true"></i> : </span>{{user.cellNumber}}</mat-card-subtitle>
+                <mat-card-subtitle><span class="subtitle">Email <i class="fa fa-envelope" aria-hidden="true"></i> : </span>{{ user.email }}</mat-card-subtitle>
+                <mat-card-subtitle><span class="subtitle">City: </span> {{ user.city }}, {{user.state}}</mat-card-subtitle>
+                <img class="circle" mat-card-md-image [src]="user.picture" />
+            </mat-card-title-group>
+        </mat-card>
+    </div>
+</crx-page>

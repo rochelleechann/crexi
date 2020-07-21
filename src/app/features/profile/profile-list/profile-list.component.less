@@ -1,0 +1,27 @@
+.primary-container {
+    margin-top: 3%;
+    mat-card {
+        width: 35%;
+        margin: auto;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 0px;
+        margin-bottom: 3%;
+    
+        @media screen and (max-width: 768px){
+            width: 95%;
+        }
+    
+        & mat-card-title, .subtitle {
+            font-weight: bold;
+        }
+    
+        &:hover, :active {
+            background-color: #cde2f2;
+            cursor: pointer;
+        }
+    
+        img.circle {
+            border-radius: 100%;
+        }
+    }
+}

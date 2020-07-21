@@ -3,8 +3,10 @@ import { createFeatureSelector, createSelector } from '@ngrx/store';
 
 export const getProfileState = createFeatureSelector<ProfileState>('profile');
 
-export const getUserProfile = createSelector(getProfileState, ({ user }) => {
-
+export const getSingleUser = createSelector(getProfileState, ({ user }) => {
     return user;
-
 });
+
+export const getUserList = createSelector(getProfileState, ({ user }) => {
+    return user;
+})

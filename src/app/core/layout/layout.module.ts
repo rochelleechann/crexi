@@ -5,7 +5,7 @@ import { MomentModule } from 'ngx-moment';
 import { AppLogoComponent } from './app-logo';
 import { FooterComponent } from './footer';
 import { HeaderComponent } from './header';
-import { PageComponent } from './page';
+import { PageComponent } from './header/page';
 import { PageNotFoundComponent } from './page-not-found';
 
 @NgModule({
