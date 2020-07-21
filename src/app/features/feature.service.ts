@@ -11,6 +11,6 @@ export class FeatureService {
 
   // API call to get random users
   getRandomUsers(number: number) {
-    return this.http.get(`${this.userEndPoint}/api/?results=${number}`);
+    return this.http.get<any>(`${this.userEndPoint}/api/?results=${number}`);
   }
 }

@@ -24,6 +24,5 @@ export class ProfileListComponent implements OnInit {
   // Track user click index
   trackUserSelection(index: number) {
     // Based on user click, pass index as a paratmeter to get specific profile
-
   }
 }
